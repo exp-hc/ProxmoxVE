@@ -63,7 +63,7 @@ function update_script() {
 
       PYTHON_VERSION="3.13" setup_uv
       CLEAN_INSTALL=1 fetch_and_deploy_gh_release "paperless" "paperless-ngx/paperless-ngx" "prebuild" "latest" "/opt/paperless" "paperless*tar.xz"
-      CLEAN_INSTALL=1 fetch_and_deploy_gh_release "jbig2enc" "ie13/jbig2enc" "tarball" "latest" "/opt/jbig2enc"
+      CLEAN_INSTALL=1 fetch_and_deploy_gh_release "jbig2enc" "agl/jbig2enc" "tarball" "latest" "/opt/jbig2enc"
 
       . /etc/os-release
       if [ "$VERSION_CODENAME" = "bookworm" ]; then
